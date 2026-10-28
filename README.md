@@ -1,5 +1,8 @@
 # E-Commerce Inventory & Stock Management Dashboard
 
+> **Live Deployment:** [https://web-engineering-inventory-dashboard.vercel.app/](https://web-engineering-inventory-dashboard.vercel.app/)  
+> **GitHub Repository:** [https://github.com/SaifDevAI/web-engineering-inventory-dashboard](https://github.com/SaifDevAI/web-engineering-inventory-dashboard)
+
 A modular React application built for a university Web Engineering assignment to demonstrate core React fundamentals, state management, lifecycle methods, hooks, and clean component architecture.
 
 ---
