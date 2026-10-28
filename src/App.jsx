@@ -122,7 +122,7 @@ function Dashboard() {
             className="toggle-logger-btn"
             onClick={() => setShowLogger((prev) => !prev)}
           >
-            {showLogger ? 'Hide Audit Logger' : 'Show Audit Logger'} (Toggle Audit Logger)
+            {showLogger ? 'Hide Audit Logger' : 'Show Audit Logger'}
           </button>
         </section>
 

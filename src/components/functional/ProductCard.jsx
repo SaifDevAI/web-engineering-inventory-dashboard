@@ -3,16 +3,6 @@ import CardWrapper from './CardWrapper';
 export default function ProductCard({ product, onUpdateStock, onDeleteProduct }) {
   const { id, name, category, price, stock } = product;
 
-  const renderStockBadge = () => {
-    if (stock === 0) {
-      return <span className="badge badge-out-of-stock">Out of Stock</span>;
-    } else if (stock <= 5) {
-      return <span className="badge badge-low-stock">Low Stock</span>;
-    } else {
-      return <span className="badge badge-in-stock">In Stock</span>;
-    }
-  };
-
   return (
     <CardWrapper title={name}>
       <div className="product-details">
@@ -26,7 +16,14 @@ export default function ProductCard({ product, onUpdateStock, onDeleteProduct })
           <strong>Stock Quantity:</strong> {stock} units
         </p>
         <div className="product-status">
-          <strong>Status:</strong> {renderStockBadge()}
+          <strong>Status:</strong>{' '}
+          {stock === 0 ? (
+            <span className="badge badge-out-of-stock">Out of Stock</span>
+          ) : stock <= 5 ? (
+            <span className="badge badge-low-stock">Low Stock</span>
+          ) : (
+            <span className="badge badge-in-stock">In Stock</span>
+          )}
         </div>
       </div>
 

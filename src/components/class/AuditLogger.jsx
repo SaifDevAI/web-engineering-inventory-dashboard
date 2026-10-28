@@ -25,7 +25,7 @@ class AuditLogger extends Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, prevState) {
     if (
       this.props.latestAction &&
       this.props.latestAction !== prevProps.latestAction
@@ -72,7 +72,7 @@ class AuditLogger extends Component {
     const { logs, notification } = this.state;
 
     return (
-      <CardWrapper title="System Audit Logger (Class Component)">
+      <CardWrapper title="System Audit Logger">
         <div className="audit-logger-container">
           {notification && (
             <div className="audit-notification">

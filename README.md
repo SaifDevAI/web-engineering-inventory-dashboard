@@ -54,7 +54,7 @@ Follow these steps to run the application locally:
 ### Installation
 1. Clone or navigate to the project directory:
    ```bash
-   cd ass-2
+   cd web-engineering-inventory-dashboard
    ```
 
 2. Install dependencies:
